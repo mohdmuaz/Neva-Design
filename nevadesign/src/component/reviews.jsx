@@ -32,7 +32,8 @@ export default function Reviews() {
   ];
 
   return (
-    <div className=" mx-auto bg-gray-100 p-6">
+    <div id="reviews"
+    className=" mx-auto bg-gray-100 p-6">
       <h1 className="text-3xl font-semibold text-center mb-4 mt-10 text-blue-700">REVIEWS</h1>
       <p className="text-center mb-6 text-gray-700">For the most up to date reviews please visit Maria’s Upwork profile.</p>
 

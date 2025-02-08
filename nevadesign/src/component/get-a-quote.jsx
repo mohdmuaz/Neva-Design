@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ChevronDown } from "lucide-react";
 
 const Button = ({ children, ...props }) => (
-  <button className="px-4 py-2 bg-blue-600 text-white rounded-lg" {...props}>
+  <button className="px-4 py-2 bg-blue-600 text-white rounded-lg w-full" {...props}>
     {children}
   </button>
 );
@@ -13,7 +13,9 @@ Button.propTypes = {
 };
 
 const Card = ({ children }) => (
-  <div className="bg-white shadow-lg p-6 rounded-2xl">{children}</div>
+  <div className="bg-white shadow-lg p-6 rounded-2xl w-[90%] md:w-[70%] lg:w-[60%] mx-auto">
+    {children}
+  </div>
 );
 
 Card.propTypes = {
@@ -34,19 +36,19 @@ export default function GetAQuote() {
   const budgetOptions = ["Under $5000", "$5000-$10000", "$10000+"];
 
   return (
-    <div className="flex flex-col items-center p-6 min-h-screen">
+    <div id="get-a-quote" className="flex flex-col items-center p-6 min-h-screen">
       <h1 className="text-3xl font-bold mt-10 text-blue-600">GET A QUOTE</h1>
       <Card>
         <CardContent>
-          {/* Left side of the form */}
-          <div className="space-y-5 ">
+          
+          <div className="space-y-5">
             <input type="text" placeholder="Your Name*" className="input-style" />
             <input type="text" placeholder="Phone" className="input-style" />
             <input type="email" placeholder="Email*" className="input-style" />
             <input type="text" placeholder="Company Name" className="input-style" />
             <input type="text" placeholder="Website URL" className="input-style" />
             
-            {/* Budget Dropdown */}
+           
             <div className="relative">
               <button 
                 onClick={() => setShowBudgetOptions(!showBudgetOptions)} 
@@ -70,11 +72,11 @@ export default function GetAQuote() {
             <input type="text" placeholder="How did you hear about us?" className="input-style" />
           </div>
           
-          {/* Right side of the form */}
+         
           <div className="space-y-4">
-            <textarea placeholder="In short, what is the project about?" className="input-style h-24"></textarea>
-            <textarea placeholder="Are there any particular websites you like? Please select." className="input-style h-24"></textarea>
-            <Button className="w-full">REQUEST QUOTE</Button>
+            <textarea placeholder="In short, what is the project about?" className="input-style h-40"></textarea>
+            <textarea placeholder="Are there any particular websites you like? Please select." className="input-style h-40"></textarea>
+            <Button>REQUEST QUOTE</Button>
           </div>
         </CardContent>
       </Card>

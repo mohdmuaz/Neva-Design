@@ -2,14 +2,15 @@ import { Monitor, ShoppingCart, MousePointer } from "lucide-react";
 
 const WebDesignServices = () => {
   return (
-    <div className="min-h-screen p-10 flex flex-col items-center">
+    <div id="web-design-services"
+    className="min-h-screen p-10 flex flex-col items-center">
       <h1 className="text-3xl font-semibold text-blue-700  text-center mt-10 mb-10
       ">
         WEB DESIGN SERVICES WE PROVIDE
       </h1>
       
       <div className="w-full max-w-4xl space-y-10">
-        {/* Custom Websites */}
+        
         <div className="flex items-center space-x-5 p">
           <div>
             <div className="flex text-center items-center">
@@ -35,7 +36,7 @@ const WebDesignServices = () => {
           </div>
         </div>
 
-        {/* Maintenance */}
+       
         <div className="flex items-center space-x-4">
           <div>
             <div className="flex text-center items-center">

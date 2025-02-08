@@ -287,8 +287,8 @@ const images = [
 
 const App = () => {
   return (
-    <div className="min-h-screen p-4">
-      {/* Header Section */}
+    <div id="work" className="min-h-screen p-4">
+      
       <div className="text-center w-full bg-blue-600 p-6 mb-6 mt-20 font-light">
         <p className="text-white font-light">
           Maria Stankevich, the owner of Neva Design, has been featured on Upwork
@@ -299,7 +299,7 @@ const App = () => {
         <p className="text-white mt-3 underline font-light">10 Best Web Developer Portfolio Examples</p>
       </div>
 
-      {/* Grid Section */}
+      
       <div className="grid grid-cols-5 gap-7">
         {images.map((item, index) => (
           <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>
